@@ -6,11 +6,11 @@ JOSE Working Group                                            M.B. Jones
 Internet-Draft                                    Self-Issued Consulting
 Updates: 7518, 8037, 9053 (if approved)                        O. Steele
 Intended status: Standards Track                               Transmute
-Expires: 11 May 2024                                     8 November 2023
+Expires: 28 July 2024                                    25 January 2024
 
 
               Fully-Specified Algorithms for JOSE and COSE
-           draft-jones-jose-fully-specified-algorithms-latest
+           draft-ietf-jose-fully-specified-algorithms-latest
 
 Abstract
 
@@ -40,11 +40,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 11 May 2024.
+   This Internet-Draft will expire on 28 July 2024.
 
 Copyright Notice
 
-   Copyright (c) 2023 IETF Trust and the persons identified as the
+   Copyright (c) 2024 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -459,20 +459,10 @@ Appendix A.  Document History
 
    [[ to be removed by the RFC Editor before publication as an RFC ]]
 
-   -02
-
-   *  Stated that key representations remain the same, other than the
-      alg value.
-
-   *  Discussed algorithms not updated.
-
-   -01
-
-   *  Renamed ES25519 to Ed25519 and ES448 to Ed448, by popular demand!
-
    -00
 
-   *  Initial version.
+   *  Created initial working group version based on draft-jones-jose-
+      fully-specified-algorithms-02.
 
 Acknowledgements
 

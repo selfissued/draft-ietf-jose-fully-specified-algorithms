@@ -1,7 +1,7 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-01-25T00:30:42.258215+00:00",
-  "repo": "selfissued/draft-jones-jose-fully-specified-algorithms",
+  "timestamp": "2024-01-28T00:30:40.624870+00:00",
+  "repo": "selfissued/draft-ietf-jose-fully-specified-algorithms",
   "labels": [
     {
       "name": "bug",
@@ -49,13 +49,30 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 3,
+      "id": "I_kwDOKNEhZc59U4Nf",
+      "title": "Considerations for AEADs",
+      "url": "https://github.com/selfissued/draft-ietf-jose-fully-specified-algorithms/issues/3",
+      "state": "OPEN",
+      "author": "OR13",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "In this rather long thread: https://mailarchive.ietf.org/arch/msg/jose/GcoCkOeg37tbFmZDkmtc3ExHVeU/\r\n\r\nWe discussed what fully specified means for HPKE and ECDH-ES+A128KW.\r\n\r\nWe considered solutions to binding the AEAD to the kdf, and how that is related to the current use of concatKDF, as described in https://datatracker.ietf.org/doc/html/rfc7518#section-4.6.2\r\n\r\nNote that \"AlgorithmID\" is mixed in to the ECDH-ES KDF, so a fully specified algorithm would bind the resulting key similar to https://datatracker.ietf.org/doc/draft-housley-lamps-cms-cek-hkdf-sha256/",
+      "createdAt": "2024-01-26T17:47:30Z",
+      "updatedAt": "2024-01-26T17:47:30Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": [
     {
       "number": 1,
       "id": "PR_kwDOKNEhZc5daTRK",
       "title": "Key representations remain the same",
-      "url": "https://github.com/selfissued/draft-jones-jose-fully-specified-algorithms/pull/1",
+      "url": "https://github.com/selfissued/draft-ietf-jose-fully-specified-algorithms/pull/1",
       "state": "MERGED",
       "author": "selfissued",
       "authorAssociation": "OWNER",
@@ -64,10 +81,10 @@
       "body": "Addresses a To Do point",
       "createdAt": "2023-10-20T18:24:42Z",
       "updatedAt": "2023-10-20T19:55:45Z",
-      "baseRepository": "selfissued/draft-jones-jose-fully-specified-algorithms",
+      "baseRepository": "selfissued/draft-ietf-jose-fully-specified-algorithms",
       "baseRefName": "main",
       "baseRefOid": "a42d36f66dee71ecd14951571cd9f98ba5d7584f",
-      "headRepository": "selfissued/draft-jones-jose-fully-specified-algorithms",
+      "headRepository": "selfissued/draft-ietf-jose-fully-specified-algorithms",
       "headRefName": "mbj-keys",
       "headRefOid": "e78c1437ac9bc3e17f37ea6423540dba9a9e924b",
       "closedAt": "2023-10-20T19:55:45Z",
@@ -97,7 +114,7 @@
       "number": 2,
       "id": "PR_kwDOKNEhZc5da1U1",
       "title": "Discussed algorithms not updated",
-      "url": "https://github.com/selfissued/draft-jones-jose-fully-specified-algorithms/pull/2",
+      "url": "https://github.com/selfissued/draft-ietf-jose-fully-specified-algorithms/pull/2",
       "state": "MERGED",
       "author": "selfissued",
       "authorAssociation": "OWNER",
@@ -106,10 +123,10 @@
       "body": "This addresses the remaining To Do items.",
       "createdAt": "2023-10-20T20:37:59Z",
       "updatedAt": "2023-10-20T20:47:18Z",
-      "baseRepository": "selfissued/draft-jones-jose-fully-specified-algorithms",
+      "baseRepository": "selfissued/draft-ietf-jose-fully-specified-algorithms",
       "baseRefName": "main",
       "baseRefOid": "e17b62461fab344aaf30c3210c38a7194f233722",
-      "headRepository": "selfissued/draft-jones-jose-fully-specified-algorithms",
+      "headRepository": "selfissued/draft-ietf-jose-fully-specified-algorithms",
       "headRefName": "mbj-not-updated",
       "headRefOid": "5c17795c043d0237956f5a992ec789486ea73b0c",
       "closedAt": "2023-10-20T20:47:18Z",

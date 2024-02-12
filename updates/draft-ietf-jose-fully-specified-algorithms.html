@@ -1213,6 +1213,9 @@ svg :is([fill="white"], [fill^="#fff"]) {
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.2">
                 <p id="section-toc.1-1.5.2.2.1"><a href="#section-5.2" class="auto internal xref">5.2</a>.  <a href="#name-ecdh-es-and-its-ephemeral-k" class="internal xref">ECDH-ES and its Ephemeral Keys</a></p>
 </li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.3">
+                <p id="section-toc.1-1.5.2.3.1"><a href="#section-5.3" class="auto internal xref">5.3</a>.  <a href="#name-kems-and-encapsulated-keys" class="internal xref">KEMs and Encapsulated Keys</a></p>
+</li>
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
@@ -1917,6 +1920,17 @@ svg :is([fill="white"], [fill^="#fff"]) {
    for choices such as "ECDH-ES with the P-256 Curve", etc.
    Feedback from deployers would be useful in determining
    what actions this specification should take in this case.<a href="#section-5.2-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="KEMs">
+<section id="section-5.3">
+        <h3 id="name-kems-and-encapsulated-keys">
+<a href="#section-5.3" class="section-number selfRef">5.3. </a><a href="#name-kems-and-encapsulated-keys" class="section-name selfRef">KEMs and Encapsulated Keys</a>
+        </h3>
+<p id="section-5.3-1">
+    All KEM algorithms provide three functions: KeyGen(), Encapsulate(), and Decapsulate().
+ In order to consider a KEM algorithm fully specified,
+ there MUST be a single KDF used per KEM Algorithm.<a href="#section-5.3-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>

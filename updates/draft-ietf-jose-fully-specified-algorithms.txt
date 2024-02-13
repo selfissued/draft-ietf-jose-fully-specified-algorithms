@@ -345,8 +345,6 @@ Table of Contents
    *  Only fully-specified algorithm identifiers may be registered.
       Polymorphic algorithm identifiers must not be registered.
 
-   *  Only proposed standard RFCs are acceptable as references.
-
 4.  Key Representations
 
    The key representations for the new fully-specified algorithms

@@ -332,8 +332,6 @@ Table of Contents
    *  Only fully-specified algorithm identifiers may be registered.
       Polymorphic algorithm identifiers must not be registered.
 
-   *  Only proposed standard RFCs are acceptable as references.
-
 3.3.2.  COSE Algorithms
 
    IANA is directed to preserve the current Reference to RFC9053 and

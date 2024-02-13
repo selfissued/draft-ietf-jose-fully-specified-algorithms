@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-02-11T00:31:07.556547+00:00",
+  "timestamp": "2024-02-13T00:28:43.441920+00:00",
   "repo": "selfissued/draft-ietf-jose-fully-specified-algorithms",
   "labels": [
     {
@@ -151,6 +151,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 4,
+      "id": "PR_kwDOKNEhZc5msAA6",
+      "title": "Updates",
+      "url": "https://github.com/selfissued/draft-ietf-jose-fully-specified-algorithms/pull/4",
+      "state": "OPEN",
+      "author": "OR13",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-02-12T22:30:35Z",
+      "updatedAt": "2024-02-12T22:59:59Z",
+      "baseRepository": "selfissued/draft-ietf-jose-fully-specified-algorithms",
+      "baseRefName": "main",
+      "baseRefOid": "48c34cd71bd8fd9c8dd853e7b46b7a1310523ac9",
+      "headRepository": "selfissued/draft-ietf-jose-fully-specified-algorithms",
+      "headRefName": "updates",
+      "headRefOid": "94e7881ac7080786d8a124f5d950a604fb631afa",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }

@@ -321,8 +321,8 @@ Table of Contents
 
 3.3.1.  JSON Web Signature and Encryption Algorithms
 
-   IANA is directed to preserve the current Reference to RFC7518, and to
-   add a reference to this section, of this document.
+   IANA is directed to preserve the current reference to RFC 7518, and
+   to add a reference to this section of this document.
 
    The review instructions for the designated experts for the IANA "JSON
    Web Signature and Encryption Algorithms" registry

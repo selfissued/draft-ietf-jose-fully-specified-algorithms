@@ -71,10 +71,13 @@ Table of Contents
        3.2.1.  Fully-Specified COSE Algorithm Registrations
        3.2.2.  Deprecated Polymorphic COSE Algorithm Registrations
      3.3.  Updated Review Instructions for Designated Experts
+       3.3.1.  JSON Web Signature and Encryption Algorithms
+       3.3.2.  COSE Algorithms
    4.  Key Representations
    5.  Notes on Algorithms Not Updated
      5.1.  Algorithms for Signing with RSASSA-PKCS1-v1_5
      5.2.  ECDH-ES and its Ephemeral Keys
+     5.3.  KEMs and Encapsulated Keys
    6.  Security Considerations
    7.  References
      7.1.  Normative References
@@ -316,19 +319,31 @@ Table of Contents
 
 3.3.  Updated Review Instructions for Designated Experts
 
+3.3.1.  JSON Web Signature and Encryption Algorithms
+
+   IANA is directed to preserve the current reference to RFC 7518, and
+   to add a reference to this section of this document.
+
    The review instructions for the designated experts for the IANA "JSON
    Web Signature and Encryption Algorithms" registry
-   [IANA.JOSE.Algorithms] in Section 7.1 of [RFC7518] are updated to add
-   this additional review criterion:
+   [IANA.JOSE.Algorithms] in Section 7.1 of [RFC7518] have been updated
+   to include an additional review criterion:
 
-   *  Registration requests for polymorphic algorithm identifiers must
-      not be accepted; only fully-specified algorithm identifiers may be
-      registered going forward.
+   *  Only fully-specified algorithm identifiers may be registered.
+      Polymorphic algorithm identifiers must not be registered.
+
+3.3.2.  COSE Algorithms
+
+   IANA is directed to preserve the current references to RFC 9053 and
+   RFC 9054, and to add a reference to this section of this document.
 
    The review instructions for the designated experts for the IANA "COSE
    Algorithms" registry [IANA.COSE.Algorithms] in Section 10.4 of
-   [RFC9053] are also updated to add the same additional review
-   criterion.
+   [RFC9053] have been updated to include an additional review
+   criterion:
+
+   *  Only fully-specified algorithm identifiers may be registered.
+      Polymorphic algorithm identifiers must not be registered.
 
 4.  Key Representations
 
@@ -378,6 +393,12 @@ Table of Contents
    algorithm identifiers for choices such as "ECDH-ES with the P-256
    Curve", etc.  Feedback from deployers would be useful in determining
    what actions this specification should take in this case.
+
+5.3.  KEMs and Encapsulated Keys
+
+   All KEM algorithms provide three functions: KeyGen(), Encapsulate(),
+   and Decapsulate().  In order to consider a KEM algorithm fully
+   specified, there MUST be a single KDF used per KEM Algorithm.
 
 6.  Security Considerations
 

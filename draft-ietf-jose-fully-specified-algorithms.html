@@ -22,21 +22,21 @@
  enabling applications to use only fully-specified algorithm identifiers.
        
     ' name="description">
-<meta content="xml2rfc 3.19.1" name="generator">
+<meta content="xml2rfc 3.19.2" name="generator">
 <meta content="Cryptographic Algorithm Identifiers" name="keyword">
 <meta content="JSON Object Signing and Encryption (JOSE)" name="keyword">
 <meta content="CBOR Object Signing and Encryption (COSE)" name="keyword">
 <meta content="Internet-Draft" name="keyword">
 <meta content="draft-ietf-jose-fully-specified-algorithms-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.19.1
+  xml2rfc 3.19.2
     Python 3.11.6
     ConfigArgParse 1.7
     google-i18n-address 3.1.0
     intervaltree 3.1.0
     Jinja2 3.1.2
     lxml 4.9.3
-    platformdirs 4.1.0
+    platformdirs 4.2.0
     pycountry 22.3.5
     PyYAML 6.0.1
     requests 2.31.0
@@ -1190,6 +1190,14 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3">
                 <p id="section-toc.1-1.3.2.3.1"><a href="#section-3.3" class="auto internal xref">3.3</a>.  <a href="#name-updated-review-instructions" class="internal xref">Updated Review Instructions for Designated Experts</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3.2.1">
+                    <p id="section-toc.1-1.3.2.3.2.1.1"><a href="#section-3.3.1" class="auto internal xref">3.3.1</a>.  <a href="#name-json-web-signature-and-encr" class="internal xref">JSON Web Signature and Encryption Algorithms</a></p>
+</li>
+                  <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3.2.3.2.2">
+                    <p id="section-toc.1-1.3.2.3.2.2.1"><a href="#section-3.3.2" class="auto internal xref">3.3.2</a>.  <a href="#name-cose-algorithms" class="internal xref">COSE Algorithms</a></p>
+</li>
+                </ul>
 </li>
             </ul>
 </li>
@@ -1204,6 +1212,9 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.2">
                 <p id="section-toc.1-1.5.2.2.1"><a href="#section-5.2" class="auto internal xref">5.2</a>.  <a href="#name-ecdh-es-and-its-ephemeral-k" class="internal xref">ECDH-ES and its Ephemeral Keys</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.3">
+                <p id="section-toc.1-1.5.2.3.1"><a href="#section-5.3" class="auto internal xref">5.3</a>.  <a href="#name-kems-and-encapsulated-keys" class="internal xref">KEMs and Encapsulated Keys</a></p>
 </li>
             </ul>
 </li>
@@ -1783,23 +1794,50 @@ svg :is([fill="white"], [fill^="#fff"]) {
         <h3 id="name-updated-review-instructions">
 <a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-updated-review-instructions" class="section-name selfRef">Updated Review Instructions for Designated Experts</a>
         </h3>
-<p id="section-3.3-1">
+<div id="UpdatedInstructions1">
+<section id="section-3.3.1">
+          <h4 id="name-json-web-signature-and-encr">
+<a href="#section-3.3.1" class="section-number selfRef">3.3.1. </a><a href="#name-json-web-signature-and-encr" class="section-name selfRef">JSON Web Signature and Encryption Algorithms</a>
+          </h4>
+<p id="section-3.3.1-1">
+ IANA is directed to preserve the current reference to RFC 7518,
+ and to add a reference to this section of this document.<a href="#section-3.3.1-1" class="pilcrow">¶</a></p>
+<p id="section-3.3.1-2">
    The review instructions for the designated experts for the
    IANA "JSON Web Signature and Encryption Algorithms" registry <span>[<a href="#IANA.JOSE.Algorithms" class="cite xref">IANA.JOSE.Algorithms</a>]</span>
    in Section 7.1 of <span>[<a href="#RFC7518" class="cite xref">RFC7518</a>]</span>
-   are updated to add this additional review criterion:<a href="#section-3.3-1" class="pilcrow">¶</a></p>
+   have been updated to include an additional review criterion:<a href="#section-3.3.1-2" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-3.3-2.1">
-            <p id="section-3.3-2.1.1">
-       Registration requests for polymorphic algorithm identifiers must not be accepted;
-       only fully-specified algorithm identifiers may be registered going forward.<a href="#section-3.3-2.1.1" class="pilcrow">¶</a></p>
+<li class="normal" id="section-3.3.1-3.1">
+              <p id="section-3.3.1-3.1.1">
+ Only fully-specified algorithm identifiers may be registered.
+       Polymorphic algorithm identifiers must not be registered.<a href="#section-3.3.1-3.1.1" class="pilcrow">¶</a></p>
 </li>
-        </ul>
-<p id="section-3.3-3">
+          </ul>
+</section>
+</div>
+<div id="UpdatedInstructions2">
+<section id="section-3.3.2">
+          <h4 id="name-cose-algorithms">
+<a href="#section-3.3.2" class="section-number selfRef">3.3.2. </a><a href="#name-cose-algorithms" class="section-name selfRef">COSE Algorithms</a>
+          </h4>
+<p id="section-3.3.2-1">
+ IANA is directed to preserve the current references to RFC 9053 and RFC 9054,
+ and to add a reference to this section of this document.<a href="#section-3.3.2-1" class="pilcrow">¶</a></p>
+<p id="section-3.3.2-2">
    The review instructions for the designated experts for the
    IANA "COSE Algorithms" registry <span>[<a href="#IANA.COSE.Algorithms" class="cite xref">IANA.COSE.Algorithms</a>]</span>
    in Section 10.4 of <span>[<a href="#RFC9053" class="cite xref">RFC9053</a>]</span>
-   are also updated to add the same additional review criterion.<a href="#section-3.3-3" class="pilcrow">¶</a></p>
+   have been updated to include an additional review criterion:<a href="#section-3.3.2-2" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="section-3.3.2-3.1">
+              <p id="section-3.3.2-3.1.1">
+ Only fully-specified algorithm identifiers may be registered.
+       Polymorphic algorithm identifiers must not be registered.<a href="#section-3.3.2-3.1.1" class="pilcrow">¶</a></p>
+</li>
+          </ul>
+</section>
+</div>
 </section>
 </div>
 </section>
@@ -1874,6 +1912,17 @@ svg :is([fill="white"], [fill^="#fff"]) {
    for choices such as "ECDH-ES with the P-256 Curve", etc.
    Feedback from deployers would be useful in determining
    what actions this specification should take in this case.<a href="#section-5.2-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="KEMs">
+<section id="section-5.3">
+        <h3 id="name-kems-and-encapsulated-keys">
+<a href="#section-5.3" class="section-number selfRef">5.3. </a><a href="#name-kems-and-encapsulated-keys" class="section-name selfRef">KEMs and Encapsulated Keys</a>
+        </h3>
+<p id="section-5.3-1">
+    All KEM algorithms provide three functions: KeyGen(), Encapsulate(), and Decapsulate().
+ In order to consider a KEM algorithm fully specified,
+ there MUST be a single KDF used per KEM Algorithm.<a href="#section-5.3-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>

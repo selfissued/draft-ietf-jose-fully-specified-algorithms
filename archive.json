@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-02-13T00:28:43.441920+00:00",
+  "timestamp": "2024-02-15T00:28:15.041554+00:00",
   "repo": "selfissued/draft-ietf-jose-fully-specified-algorithms",
   "labels": [
     {
@@ -157,26 +157,143 @@
       "id": "PR_kwDOKNEhZc5msAA6",
       "title": "Updates",
       "url": "https://github.com/selfissued/draft-ietf-jose-fully-specified-algorithms/pull/4",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "OR13",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-02-12T22:30:35Z",
-      "updatedAt": "2024-02-12T22:59:59Z",
+      "updatedAt": "2024-02-13T16:41:33Z",
       "baseRepository": "selfissued/draft-ietf-jose-fully-specified-algorithms",
       "baseRefName": "main",
       "baseRefOid": "48c34cd71bd8fd9c8dd853e7b46b7a1310523ac9",
       "headRepository": "selfissued/draft-ietf-jose-fully-specified-algorithms",
       "headRefName": "updates",
-      "headRefOid": "94e7881ac7080786d8a124f5d950a604fb631afa",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
-      "comments": [],
-      "reviews": []
+      "headRefOid": "c11aed3680562557d40af23cc9526248fa328d21",
+      "closedAt": "2024-02-13T16:41:33Z",
+      "mergedAt": "2024-02-13T16:41:33Z",
+      "mergedBy": "selfissued",
+      "mergeCommit": {
+        "oid": "7a910b5dc2eb5f67db2ea1d59493f5414c334c20"
+      },
+      "comments": [
+        {
+          "author": "OR13",
+          "authorAssociation": "COLLABORATOR",
+          "body": "I have applied your suggestions.",
+          "createdAt": "2024-02-13T14:28:46Z",
+          "updatedAt": "2024-02-13T14:28:46Z"
+        }
+      ],
+      "reviews": [
+        {
+          "id": "PRR_kwDOKNEhZc5v3r0K",
+          "commit": {
+            "abbreviatedOid": "94e7881"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-02-13T04:49:38Z",
+          "updatedAt": "2024-02-13T04:49:38Z",
+          "comments": [
+            {
+              "originalPosition": 9,
+              "body": "```suggestion\r\n\t\tIANA is directed to preserve the current reference to RFC 7518,\r\n\t\tand to add a reference to this section of this document.\r\n```",
+              "createdAt": "2024-02-13T04:49:38Z",
+              "updatedAt": "2024-02-13T04:49:38Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKNEhZc5v3r9Z",
+          "commit": {
+            "abbreviatedOid": "94e7881"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-02-13T04:50:24Z",
+          "updatedAt": "2024-02-13T04:50:24Z",
+          "comments": [
+            {
+              "originalPosition": 26,
+              "body": "```suggestion\r\n```",
+              "createdAt": "2024-02-13T04:50:24Z",
+              "updatedAt": "2024-02-13T04:50:24Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKNEhZc5v3sBp",
+          "commit": {
+            "abbreviatedOid": "94e7881"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-02-13T04:50:47Z",
+          "updatedAt": "2024-02-13T04:50:48Z",
+          "comments": [
+            {
+              "originalPosition": 48,
+              "body": "```suggestion\r\n```",
+              "createdAt": "2024-02-13T04:50:48Z",
+              "updatedAt": "2024-02-13T04:50:48Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKNEhZc5v3sIf",
+          "commit": {
+            "abbreviatedOid": "94e7881"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-02-13T04:51:24Z",
+          "updatedAt": "2024-02-13T04:51:25Z",
+          "comments": [
+            {
+              "originalPosition": 33,
+              "body": "```suggestion\r\n\t\tIANA is directed to preserve the current references to RFC 9053 and RFC 9054,\r\n\t\tand to add a reference to this section of this document.\r\n```",
+              "createdAt": "2024-02-13T04:51:24Z",
+              "updatedAt": "2024-02-13T04:51:25Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOKNEhZc5v3sMS",
+          "commit": {
+            "abbreviatedOid": "94e7881"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "CHANGES_REQUESTED",
+          "body": "Please apply my suggestions.",
+          "createdAt": "2024-02-13T04:51:43Z",
+          "updatedAt": "2024-02-13T04:51:43Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOKNEhZc5v9yKY",
+          "commit": {
+            "abbreviatedOid": "c11aed3"
+          },
+          "author": "selfissued",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-02-13T16:41:17Z",
+          "updatedAt": "2024-02-13T16:41:17Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }

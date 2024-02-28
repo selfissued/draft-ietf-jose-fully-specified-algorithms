@@ -6,7 +6,7 @@ JOSE Working Group                                            M.B. Jones
 Internet-Draft                                    Self-Issued Consulting
 Updates: 7518, 8037, 9053 (if approved)                        O. Steele
 Intended status: Standards Track                               Transmute
-Expires: 30 August 2024                                 27 February 2024
+Expires: 31 August 2024                                 28 February 2024
 
 
               Fully-Specified Algorithms for JOSE and COSE
@@ -40,7 +40,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 30 August 2024.
+   This Internet-Draft will expire on 31 August 2024.
 
 Copyright Notice
 
@@ -368,12 +368,11 @@ Table of Contents
    the content encryption algorithm.  Likewise, encrypted COSE objects
    can use multiple algorithms for corresponding purposes.
 
-   For purposes of being fully specified, each of these multiple
-   algorithms must be independently fully specified.  The operations
-   performed by each of them MUST NOT vary when combined with other
-   algorithms.  So for instance, for JOSE alg values and enc values MUST
-   each be fully specified, and their specified behaviors MUST not
-   depend upon one another.
+   Each of these multiple algorithms must be independently fully
+   specified.  The operations performed by each of them MUST NOT vary
+   when used alongside other algorithms.  So for instance, for JOSE, alg
+   values and enc values MUST each be fully specified, and their
+   behaviors MUST NOT depend upon one another.
 
 6.  Notes on Algorithms Not Updated
 

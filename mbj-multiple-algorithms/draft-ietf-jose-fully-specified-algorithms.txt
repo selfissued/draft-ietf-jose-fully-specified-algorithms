@@ -6,7 +6,7 @@ JOSE Working Group                                            M.B. Jones
 Internet-Draft                                    Self-Issued Consulting
 Updates: 7518, 8037, 9053 (if approved)                        O. Steele
 Intended status: Standards Track                               Transmute
-Expires: 28 July 2024                                    25 January 2024
+Expires: 30 August 2024                                 27 February 2024
 
 
               Fully-Specified Algorithms for JOSE and COSE
@@ -40,7 +40,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 28 July 2024.
+   This Internet-Draft will expire on 30 August 2024.
 
 Copyright Notice
 
@@ -71,14 +71,18 @@ Table of Contents
        3.2.1.  Fully-Specified COSE Algorithm Registrations
        3.2.2.  Deprecated Polymorphic COSE Algorithm Registrations
      3.3.  Updated Review Instructions for Designated Experts
+       3.3.1.  JSON Web Signature and Encryption Algorithms
+       3.3.2.  COSE Algorithms
    4.  Key Representations
-   5.  Notes on Algorithms Not Updated
-     5.1.  Algorithms for Signing with RSASSA-PKCS1-v1_5
-     5.2.  ECDH-ES and its Ephemeral Keys
-   6.  Security Considerations
-   7.  References
-     7.1.  Normative References
-     7.2.  Informative References
+   5.  Fully-Spedified Computations Using Multiple Algorithms
+   6.  Notes on Algorithms Not Updated
+     6.1.  Algorithms for Signing with RSASSA-PKCS1-v1_5
+     6.2.  ECDH-ES and its Ephemeral Keys
+     6.3.  KEMs and Encapsulated Keys
+   7.  Security Considerations
+   8.  References
+     8.1.  Normative References
+     8.2.  Informative References
    Appendix A.  Document History
    Acknowledgements
    Authors' Addresses
@@ -107,7 +111,8 @@ Table of Contents
    Server Metadata [RFC8414] uses negotiation parameters like these
    (from an example in the specification):
 
-  "token_endpoint_auth_signing_alg_values_supported": ["RS256", "ES256"]
+     "token_endpoint_auth_signing_alg_values_supported":
+       ["RS256", "ES256"]
 
    OpenID Connect Discovery [OpenID.Discovery] likewise negotiates
    supported algorithms using alg and enc values.  W3C Web
@@ -207,7 +212,8 @@ Table of Contents
 3.1.  JOSE Algorithms Registrations
 
    This section registers the following values in the IANA "JSON Web
-   Signature and Encryption Algorithms" registry [IANA.JOSE.Algorithms].
+   Signature and Encryption Algorithms" registry [IANA.JOSE.Algorithms]
+   established by [RFC7515].
 
 3.1.1.  Fully-Specified JOSE Algorithm Registrations
 
@@ -316,19 +322,31 @@ Table of Contents
 
 3.3.  Updated Review Instructions for Designated Experts
 
+3.3.1.  JSON Web Signature and Encryption Algorithms
+
+   IANA is directed to preserve the current reference to RFC 7518, and
+   to add a reference to this section of this document.
+
    The review instructions for the designated experts for the IANA "JSON
    Web Signature and Encryption Algorithms" registry
-   [IANA.JOSE.Algorithms] in Section 7.1 of [RFC7518] are updated to add
-   this additional review criterion:
+   [IANA.JOSE.Algorithms] in Section 7.1 of [RFC7518] have been updated
+   to include an additional review criterion:
 
-   *  Registration requests for polymorphic algorithm identifiers must
-      not be accepted; only fully-specified algorithm identifiers may be
-      registered going forward.
+   *  Only fully-specified algorithm identifiers may be registered.
+      Polymorphic algorithm identifiers must not be registered.
+
+3.3.2.  COSE Algorithms
+
+   IANA is directed to preserve the current references to RFC 9053 and
+   RFC 9054, and to add a reference to this section of this document.
 
    The review instructions for the designated experts for the IANA "COSE
    Algorithms" registry [IANA.COSE.Algorithms] in Section 10.4 of
-   [RFC9053] are also updated to add the same additional review
-   criterion.
+   [RFC9053] have been updated to include an additional review
+   criterion:
+
+   *  Only fully-specified algorithm identifiers may be registered.
+      Polymorphic algorithm identifiers must not be registered.
 
 4.  Key Representations
 
@@ -340,13 +358,30 @@ Table of Contents
    except that the alg value would be Ed25519 rather than EdDSA, if
    included.
 
-5.  Notes on Algorithms Not Updated
+5.  Fully-Spedified Computations Using Multiple Algorithms
+
+   Both JOSE and COSE have operations that take multiple algorithms as
+   parameters.  Encrypted objects in JOSE [RFC7516] use two algorithm
+   identifiers: the first in the alg (Algorithm) Header Parameter, which
+   specifies how to determine the content encryption key, and the second
+   in the enc (Encryption Algorithm) Header Parameter, which specifies
+   the content encryption algorithm.  Likewise, encrypted COSE objects
+   can use multiple algorithms for corresponding purposes.
+
+   For purposes of being fully specified, each of these multiple
+   algorithms must be independently fully specified.  The operations
+   performed by each of them MUST NOT vary when combined with other
+   algorithms.  So for instance, for JOSE alg values and enc values MUST
+   each be fully specified, and their specified behaviors MUST not
+   depend upon one another.
+
+6.  Notes on Algorithms Not Updated
 
    The working group has discussed some existing algorithms that are not
    updated by this specification.  This section discusses why they have
    not been updated.
 
-5.1.  Algorithms for Signing with RSASSA-PKCS1-v1_5
+6.1.  Algorithms for Signing with RSASSA-PKCS1-v1_5
 
    The working group has discussed whether the RS256, RS384, and RS512
    algorithms should be considered fully-specified or not, because they
@@ -363,7 +398,7 @@ Table of Contents
    Therefore, the RSA signature algorithms are not replaced by this
    specification.
 
-5.2.  ECDH-ES and its Ephemeral Keys
+6.2.  ECDH-ES and its Ephemeral Keys
 
    The working group has discussed whether the ECDH-ES key agreement
    algorithm should be considered fully-specified or not, because it can
@@ -379,7 +414,13 @@ Table of Contents
    Curve", etc.  Feedback from deployers would be useful in determining
    what actions this specification should take in this case.
 
-6.  Security Considerations
+6.3.  KEMs and Encapsulated Keys
+
+   All KEM algorithms provide three functions: KeyGen(), Encapsulate(),
+   and Decapsulate().  In order to consider a KEM algorithm fully
+   specified, there MUST be a single KDF used per KEM Algorithm.
+
+7.  Security Considerations
 
    Using fully-specified algorithm identifiers reduces the attack
    surface relative to using polymorphic algorithm identifiers, since it
@@ -388,14 +429,22 @@ Table of Contents
    The security considerations for ECDSA in [RFC7518], for EdDSA in
    [RFC8037], and for ECDSA and EdDSA in [RFC9053] apply.
 
-7.  References
+8.  References
 
-7.1.  Normative References
+8.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
+
+   [RFC7515]  Jones, M., Bradley, J., and N. Sakimura, "JSON Web
+              Signature (JWS)", RFC 7515, DOI 10.17487/RFC7515, May
+              2015, <https://www.rfc-editor.org/info/rfc7515>.
+
+   [RFC7516]  Jones, M. and J. Hildebrand, "JSON Web Encryption (JWE)",
+              RFC 7516, DOI 10.17487/RFC7516, May 2015,
+              <https://www.rfc-editor.org/info/rfc7516>.
 
    [RFC8037]  Liusvaara, I., "CFRG Elliptic Curve Diffie-Hellman (ECDH)
               and Signatures in JSON Object Signing and Encryption
@@ -410,7 +459,7 @@ Table of Contents
               Initial Algorithms", RFC 9053, DOI 10.17487/RFC9053,
               August 2022, <https://www.rfc-editor.org/info/rfc9053>.
 
-7.2.  Informative References
+8.2.  Informative References
 
    [FIDO2]    Bradley, J., Hodges, J., Jones, M., Kumar, A., and J.
               Johan, "Client to Authenticator Protocol (CTAP)", FIDO
@@ -458,6 +507,15 @@ Table of Contents
 Appendix A.  Document History
 
    [[ to be removed by the RFC Editor before publication as an RFC ]]
+
+   -01
+
+   *  Included additional instructions for IANA.
+
+   *  Added text on KEMs and Encapsulated keys.
+
+   *  Added the section Fully-Spedified Computations Using Multiple
+      Algorithms.
 
    -00
 

@@ -415,9 +415,14 @@ Table of Contents
 
 6.3.  KEMs and Encapsulated Keys
 
-   All KEM algorithms provide three functions: KeyGen(), Encapsulate(),
-   and Decapsulate().  In order to consider a KEM algorithm fully
-   specified, there MUST be a single KDF used per KEM Algorithm.
+   All key encapsulation mechanisms (KEM) algorithms as described in
+   [NIST.PQC-API] provide three functions: KeyGen(), Encapsulate(), and
+   Decapsulate().  In order to consider a KEM algorithm fully specified,
+   there MUST be a single KDF used per KEM Algorithm.  For example, the
+   HPKE KEM "0x0010 or DHKEM(P-256, HKDF-SHA256)" as defined in
+   [RFC9180] is fully specified, because it uses a single elliptic curve
+   (secp256r1) and a single KDF (HKDF with SHA256) as described in
+   [RFC5869].
 
 7.  Security Considerations
 
@@ -477,11 +482,22 @@ Table of Contents
               <https://www.iana.org/assignments/jose/jose.xhtml#web-
               signature-encryption-algorithms>.
 
+   [NIST.PQC-API]
+              National Institute of Standards and Technology (NIST),
+              "PQC-API", <https://csrc.nist.gov/CSRC/media/Projects/
+              Post-Quantum-Cryptography/documents/example-files/api-
+              notes.pdf>.
+
    [OpenID.Discovery]
               Sakimura, N., Bradley, J., Jones, M.B., and E. Jay,
               "OpenID Connect Discovery 1.0", 8 November 2014,
               <https://openid.net/specs/openid-connect-discovery-
               1_0.html>.
+
+   [RFC5869]  Krawczyk, H. and P. Eronen, "HMAC-based Extract-and-Expand
+              Key Derivation Function (HKDF)", RFC 5869,
+              DOI 10.17487/RFC5869, May 2010,
+              <https://www.rfc-editor.org/info/rfc5869>.
 
    [RFC7518]  Jones, M., "JSON Web Algorithms (JWA)", RFC 7518,
               DOI 10.17487/RFC7518, May 2015,
@@ -497,6 +513,10 @@ Table of Contents
               DOI 10.17487/RFC8414, June 2018,
               <https://www.rfc-editor.org/info/rfc8414>.
 
+   [RFC9180]  Barnes, R., Bhargavan, K., Lipp, B., and C. Wood, "Hybrid
+              Public Key Encryption", RFC 9180, DOI 10.17487/RFC9180,
+              February 2022, <https://www.rfc-editor.org/info/rfc9180>.
+
    [WebAuthn] Hodges, J., Jones, J.C., Jones, M., Kumar, A., and E.
               Lundberg, "Web Authentication: An API for accessing Public
               Key Credentials - Level 2", World Wide Web Consortium
@@ -506,6 +526,12 @@ Table of Contents
 Appendix A.  Document History
 
    [[ to be removed by the RFC Editor before publication as an RFC ]]
+
+   -02
+
+   *  Expand references for KEMs
+
+   *  Add example of fully specified KEM.
 
    -01
 

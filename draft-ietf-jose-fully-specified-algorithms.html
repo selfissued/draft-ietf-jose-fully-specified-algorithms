@@ -1948,9 +1948,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-6.3" class="section-number selfRef">6.3. </a><a href="#name-kems-and-encapsulated-keys" class="section-name selfRef">KEMs and Encapsulated Keys</a>
         </h3>
 <p id="section-6.3-1">
-    All KEM algorithms provide three functions: KeyGen(), Encapsulate(), and Decapsulate().
+    All key encapsulation mechanisms (KEM) algorithms as described in <span>[<a href="#NIST.PQC-API" class="cite xref">NIST.PQC-API</a>]</span> provide three functions: KeyGen(), Encapsulate(), and Decapsulate().
  In order to consider a KEM algorithm fully specified,
- there MUST be a single KDF used per KEM Algorithm.<a href="#section-6.3-1" class="pilcrow">¶</a></p>
+ there MUST be a single KDF used per KEM Algorithm.
+ For example, the HPKE KEM "0x0010 or DHKEM(P-256, HKDF-SHA256)" as defined in <span>[<a href="#RFC9180" class="cite xref">RFC9180</a>]</span> is fully specified,
+ because it uses a single elliptic curve (secp256r1) and a single KDF (HKDF with SHA256) as described in <span>[<a href="#RFC5869" class="cite xref">RFC5869</a>]</span>.<a href="#section-6.3-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -2022,9 +2024,17 @@ svg :is([fill="white"], [fill^="#fff"]) {
         <dd>
 <span class="refAuthor">IANA</span>, <span class="refTitle">"JOSE Algorithms"</span>, <span>&lt;<a href="https://www.iana.org/assignments/jose/jose.xhtml#web-signature-encryption-algorithms">https://www.iana.org/assignments/jose/jose.xhtml#web-signature-encryption-algorithms</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="NIST.PQC-API">[NIST.PQC-API]</dt>
+        <dd>
+<span class="refAuthor">National Institute of Standards and Technology (NIST)</span>, <span class="refTitle">"PQC-API"</span>, <span>&lt;<a href="https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/example-files/api-notes.pdf">https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/example-files/api-notes.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="OpenID.Discovery">[OpenID.Discovery]</dt>
         <dd>
 <span class="refAuthor">Sakimura, N.</span>, <span class="refAuthor">Bradley, J.</span>, <span class="refAuthor">Jones, M.B.</span>, and <span class="refAuthor">E. Jay</span>, <span class="refTitle">"OpenID Connect Discovery 1.0"</span>, <time datetime="2014-11-08" class="refDate">8 November 2014</time>, <span>&lt;<a href="https://openid.net/specs/openid-connect-discovery-1_0.html">https://openid.net/specs/openid-connect-discovery-1_0.html</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC5869">[RFC5869]</dt>
+        <dd>
+<span class="refAuthor">Krawczyk, H.</span> and <span class="refAuthor">P. Eronen</span>, <span class="refTitle">"HMAC-based Extract-and-Expand Key Derivation Function (HKDF)"</span>, <span class="seriesInfo">RFC 5869</span>, <span class="seriesInfo">DOI 10.17487/RFC5869</span>, <time datetime="2010-05" class="refDate">May 2010</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc5869">https://www.rfc-editor.org/info/rfc5869</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC7518">[RFC7518]</dt>
         <dd>
@@ -2037,6 +2047,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dt id="RFC8414">[RFC8414]</dt>
         <dd>
 <span class="refAuthor">Jones, M.</span>, <span class="refAuthor">Sakimura, N.</span>, and <span class="refAuthor">J. Bradley</span>, <span class="refTitle">"OAuth 2.0 Authorization Server Metadata"</span>, <span class="seriesInfo">RFC 8414</span>, <span class="seriesInfo">DOI 10.17487/RFC8414</span>, <time datetime="2018-06" class="refDate">June 2018</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc8414">https://www.rfc-editor.org/info/rfc8414</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC9180">[RFC9180]</dt>
+        <dd>
+<span class="refAuthor">Barnes, R.</span>, <span class="refAuthor">Bhargavan, K.</span>, <span class="refAuthor">Lipp, B.</span>, and <span class="refAuthor">C. Wood</span>, <span class="refTitle">"Hybrid Public Key Encryption"</span>, <span class="seriesInfo">RFC 9180</span>, <span class="seriesInfo">DOI 10.17487/RFC9180</span>, <time datetime="2022-02" class="refDate">February 2022</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc9180">https://www.rfc-editor.org/info/rfc9180</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="WebAuthn">[WebAuthn]</dt>
       <dd>
@@ -2053,27 +2067,39 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <p id="appendix-A-1">
         [[ to be removed by the RFC Editor before publication as an RFC ]]<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 <p id="appendix-A-2">
-        -01<a href="#appendix-A-2" class="pilcrow">¶</a></p>
+        -02<a href="#appendix-A-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="appendix-A-3.1">
           <p id="appendix-A-3.1.1">
-     Included additional instructions for IANA.<a href="#appendix-A-3.1.1" class="pilcrow">¶</a></p>
+     Expand references for KEMs<a href="#appendix-A-3.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="appendix-A-3.2">
           <p id="appendix-A-3.2.1">
-     Added text on KEMs and Encapsulated keys.<a href="#appendix-A-3.2.1" class="pilcrow">¶</a></p>
-</li>
-        <li class="normal" id="appendix-A-3.3">
-          <p id="appendix-A-3.3.1">
-     Added the section Fully-Specified Computations Using Multiple Algorithms.<a href="#appendix-A-3.3.1" class="pilcrow">¶</a></p>
+     Add example of fully specified KEM.<a href="#appendix-A-3.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <p id="appendix-A-4">
-        -00<a href="#appendix-A-4" class="pilcrow">¶</a></p>
+        -01<a href="#appendix-A-4" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="appendix-A-5.1">
           <p id="appendix-A-5.1.1">
-     Created initial working group version based on draft-jones-jose-fully-specified-algorithms-02.<a href="#appendix-A-5.1.1" class="pilcrow">¶</a></p>
+     Included additional instructions for IANA.<a href="#appendix-A-5.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="appendix-A-5.2">
+          <p id="appendix-A-5.2.1">
+     Added text on KEMs and Encapsulated keys.<a href="#appendix-A-5.2.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="appendix-A-5.3">
+          <p id="appendix-A-5.3.1">
+     Added the section Fully-Specified Computations Using Multiple Algorithms.<a href="#appendix-A-5.3.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
+<p id="appendix-A-6">
+        -00<a href="#appendix-A-6" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="appendix-A-7.1">
+          <p id="appendix-A-7.1.1">
+     Created initial working group version based on draft-jones-jose-fully-specified-algorithms-02.<a href="#appendix-A-7.1.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>

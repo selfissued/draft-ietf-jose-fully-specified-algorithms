@@ -22,14 +22,14 @@
  enabling applications to use only fully-specified algorithm identifiers.
        
     ' name="description">
-<meta content="xml2rfc 3.19.2" name="generator">
+<meta content="xml2rfc 3.19.4" name="generator">
 <meta content="Cryptographic Algorithm Identifiers" name="keyword">
 <meta content="JSON Object Signing and Encryption (JOSE)" name="keyword">
 <meta content="CBOR Object Signing and Encryption (COSE)" name="keyword">
 <meta content="Internet-Draft" name="keyword">
 <meta content="draft-ietf-jose-fully-specified-algorithms-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.19.2
+  xml2rfc 3.19.4
     Python 3.11.6
     ConfigArgParse 1.7
     google-i18n-address 3.1.0
@@ -1040,12 +1040,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <table class="ears">
 <thead><tr>
 <td class="left">Internet-Draft</td>
-<td class="center">Fully-Specified Algorithms for JOSE and </td>
-<td class="right">January 2024</td>
+<td class="center">Fully-Specified Algorithms</td>
+<td class="right">February 2024</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Jones &amp; Steele</td>
-<td class="center">Expires 28 July 2024</td>
+<td class="center">Expires 30 August 2024</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1061,12 +1061,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="https://www.rfc-editor.org/rfc/rfc7518" class="eref">7518</a>, <a href="https://www.rfc-editor.org/rfc/rfc8037" class="eref">8037</a>, <a href="https://www.rfc-editor.org/rfc/rfc9053" class="eref">9053</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-01-25" class="published">25 January 2024</time>
+<time datetime="2024-02-27" class="published">27 February 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-07-28">28 July 2024</time></dd>
+<dd class="expires"><time datetime="2024-08-30">30 August 2024</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1115,7 +1115,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 28 July 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 30 August 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1205,41 +1205,44 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-key-representations" class="internal xref">Key Representations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-notes-on-algorithms-not-upd" class="internal xref">Notes on Algorithms Not Updated</a></p>
-<ul class="compact toc ulBare ulEmpty">
-<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.1">
-                <p id="section-toc.1-1.5.2.1.1"><a href="#section-5.1" class="auto internal xref">5.1</a>.  <a href="#name-algorithms-for-signing-with" class="internal xref">Algorithms for Signing with RSASSA-PKCS1-v1_5</a></p>
-</li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.2">
-                <p id="section-toc.1-1.5.2.2.1"><a href="#section-5.2" class="auto internal xref">5.2</a>.  <a href="#name-ecdh-es-and-its-ephemeral-k" class="internal xref">ECDH-ES and its Ephemeral Keys</a></p>
-</li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5.2.3">
-                <p id="section-toc.1-1.5.2.3.1"><a href="#section-5.3" class="auto internal xref">5.3</a>.  <a href="#name-kems-and-encapsulated-keys" class="internal xref">KEMs and Encapsulated Keys</a></p>
-</li>
-            </ul>
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-fully-spedified-computation" class="internal xref">Fully-Spedified Computations Using Multiple Algorithms</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
-</li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-references" class="internal xref">References</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-notes-on-algorithms-not-upd" class="internal xref">Notes on Algorithms Not Updated</a></p>
 <ul class="compact toc ulBare ulEmpty">
-<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7.2.1">
-                <p id="section-toc.1-1.7.2.1.1"><a href="#section-7.1" class="auto internal xref">7.1</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.1">
+                <p id="section-toc.1-1.6.2.1.1"><a href="#section-6.1" class="auto internal xref">6.1</a>.  <a href="#name-algorithms-for-signing-with" class="internal xref">Algorithms for Signing with RSASSA-PKCS1-v1_5</a></p>
 </li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7.2.2">
-                <p id="section-toc.1-1.7.2.2.1"><a href="#section-7.2" class="auto internal xref">7.2</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.2">
+                <p id="section-toc.1-1.6.2.2.1"><a href="#section-6.2" class="auto internal xref">6.2</a>.  <a href="#name-ecdh-es-and-its-ephemeral-k" class="internal xref">ECDH-ES and its Ephemeral Keys</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6.2.3">
+                <p id="section-toc.1-1.6.2.3.1"><a href="#section-6.3" class="auto internal xref">6.3</a>.  <a href="#name-kems-and-encapsulated-keys" class="internal xref">KEMs and Encapsulated Keys</a></p>
 </li>
             </ul>
 </li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
+            <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
+</li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
-            <p id="section-toc.1-1.8.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-document-history" class="internal xref">Document History</a></p>
+            <p id="section-toc.1-1.8.1"><a href="#section-8" class="auto internal xref">8</a>.  <a href="#name-references" class="internal xref">References</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8.2.1">
+                <p id="section-toc.1-1.8.2.1.1"><a href="#section-8.1" class="auto internal xref">8.1</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8.2.2">
+                <p id="section-toc.1-1.8.2.2.1"><a href="#section-8.2" class="auto internal xref">8.2</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
+</li>
+            </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9">
-            <p id="section-toc.1-1.9.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-acknowledgements" class="internal xref">Acknowledgements</a></p>
+            <p id="section-toc.1-1.9.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-document-history" class="internal xref">Document History</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10">
-            <p id="section-toc.1-1.10.1"><a href="#appendix-C" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
+            <p id="section-toc.1-1.10.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-acknowledgements" class="internal xref">Acknowledgements</a></p>
+</li>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11">
+            <p id="section-toc.1-1.11.1"><a href="#appendix-C" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
@@ -1278,7 +1281,8 @@ svg :is([fill="white"], [fill^="#fff"]) {
  uses negotiation parameters like these (from an example in the specification):<a href="#section-1-3" class="pilcrow">¶</a></p>
 <div class="alignLeft art-text artwork" id="section-1-4">
 <pre>
-  "token_endpoint_auth_signing_alg_values_supported": ["RS256", "ES256"]
+  "token_endpoint_auth_signing_alg_values_supported":
+    ["RS256", "ES256"]
 </pre><a href="#section-1-4" class="pilcrow">¶</a>
 </div>
 <p id="section-1-5">
@@ -1448,7 +1452,8 @@ svg :is([fill="white"], [fill^="#fff"]) {
         </h3>
 <p id="section-3.1-1">
    This section registers the following values in the
-   IANA "JSON Web Signature and Encryption Algorithms" registry <span>[<a href="#IANA.JOSE.Algorithms" class="cite xref">IANA.JOSE.Algorithms</a>]</span>.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
+   IANA "JSON Web Signature and Encryption Algorithms" registry <span>[<a href="#IANA.JOSE.Algorithms" class="cite xref">IANA.JOSE.Algorithms</a>]</span>
+   established by <span>[<a href="#RFC7515" class="cite xref">RFC7515</a>]</span>.<a href="#section-3.1-1" class="pilcrow">¶</a></p>
 <div id="new-jose-regs">
 <section id="section-3.1.1">
           <h4 id="name-fully-specified-jose-algori">
@@ -1859,21 +1864,45 @@ svg :is([fill="white"], [fill^="#fff"]) {
  <code>EdDSA</code>, if included.<a href="#section-4-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="NotUpdated">
+<div id="MultiAlgs">
 <section id="section-5">
-      <h2 id="name-notes-on-algorithms-not-upd">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-notes-on-algorithms-not-upd" class="section-name selfRef">Notes on Algorithms Not Updated</a>
+      <h2 id="name-fully-spedified-computation">
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-fully-spedified-computation" class="section-name selfRef">Fully-Spedified Computations Using Multiple Algorithms</a>
       </h2>
 <p id="section-5-1">
+ Both JOSE and COSE have operations that take multiple algorithms as parameters.
+ Encrypted objects in JOSE <span>[<a href="#RFC7516" class="cite xref">RFC7516</a>]</span> use two algorithm identifiers:
+ the first in the <code>alg</code> (Algorithm) Header Parameter,
+ which specifies how to determine the content encryption key, and
+ the second in the <code>enc</code> (Encryption Algorithm)
+ Header Parameter, which specifies the content encryption algorithm.
+ Likewise, encrypted COSE objects can use multiple algorithms
+ for corresponding purposes.<a href="#section-5-1" class="pilcrow">¶</a></p>
+<p id="section-5-2">
+ For purposes of being fully specified,
+ each of these multiple algorithms must be independently fully specified.
+ The operations performed by each of them MUST NOT vary
+ when combined with other algorithms.
+ So for instance, for JOSE <code>alg</code> values
+ and <code>enc</code> values MUST each be fully specified,
+ and their specified behaviors MUST not depend upon one another.<a href="#section-5-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="NotUpdated">
+<section id="section-6">
+      <h2 id="name-notes-on-algorithms-not-upd">
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-notes-on-algorithms-not-upd" class="section-name selfRef">Notes on Algorithms Not Updated</a>
+      </h2>
+<p id="section-6-1">
  The working group has discussed some existing algorithms that are not updated
  by this specification.
- This section discusses why they have not been updated.<a href="#section-5-1" class="pilcrow">¶</a></p>
+ This section discusses why they have not been updated.<a href="#section-6-1" class="pilcrow">¶</a></p>
 <div id="RSA">
-<section id="section-5.1">
+<section id="section-6.1">
         <h3 id="name-algorithms-for-signing-with">
-<a href="#section-5.1" class="section-number selfRef">5.1. </a><a href="#name-algorithms-for-signing-with" class="section-name selfRef">Algorithms for Signing with RSASSA-PKCS1-v1_5</a>
+<a href="#section-6.1" class="section-number selfRef">6.1. </a><a href="#name-algorithms-for-signing-with" class="section-name selfRef">Algorithms for Signing with RSASSA-PKCS1-v1_5</a>
         </h3>
-<p id="section-5.1-1">
+<p id="section-6.1-1">
    The working group has discussed whether the
    <code>RS256</code>,
    <code>RS384</code>, and
@@ -1881,22 +1910,22 @@ svg :is([fill="white"], [fill^="#fff"]) {
    should be considered fully-specified or not,
    because they can operate on keys of different sizes.
    For instance, they can use both 2048- and 4096-bit keys.
-   The same is true of the <code>PS*</code> algorithms.<a href="#section-5.1-1" class="pilcrow">¶</a></p>
-<p id="section-5.1-2">
+   The same is true of the <code>PS*</code> algorithms.<a href="#section-6.1-1" class="pilcrow">¶</a></p>
+<p id="section-6.1-2">
    This is not a problem in practice, because RSA libraries accomodate
    keys of different sizes without having to use different code.
    Therefore, for example, there are not known cases in the wild where it would be useful
    to have different algorithm identifiers for RSASSA-PKCS1-v1_5 with SHA-256 and 2048-bit keys
    and RSASSA-PKCS1-v1_5 with SHA-256 and 4096-bit keys or 8192-bit keys.
-   Therefore, the RSA signature algorithms are not replaced by this specification.<a href="#section-5.1-2" class="pilcrow">¶</a></p>
+   Therefore, the RSA signature algorithms are not replaced by this specification.<a href="#section-6.1-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="ECDH-ES">
-<section id="section-5.2">
+<section id="section-6.2">
         <h3 id="name-ecdh-es-and-its-ephemeral-k">
-<a href="#section-5.2" class="section-number selfRef">5.2. </a><a href="#name-ecdh-es-and-its-ephemeral-k" class="section-name selfRef">ECDH-ES and its Ephemeral Keys</a>
+<a href="#section-6.2" class="section-number selfRef">6.2. </a><a href="#name-ecdh-es-and-its-ephemeral-k" class="section-name selfRef">ECDH-ES and its Ephemeral Keys</a>
         </h3>
-<p id="section-5.2-1">
+<p id="section-6.2-1">
    The working group has discussed whether the
    <code>ECDH-ES</code> key agreement algorithm
    should be considered fully-specified or not,
@@ -1904,56 +1933,64 @@ svg :is([fill="white"], [fill^="#fff"]) {
    Indeed, an implementation might work when <code>ECDH-ES</code>
    is used with a ephemeral keys using the <code>P-256</code> curve,
    and not work when used with ephemeral keys using the
-   <code>Ed25519</code> curve.<a href="#section-5.2-1" class="pilcrow">¶</a></p>
-<p id="section-5.2-2">
+   <code>Ed25519</code> curve.<a href="#section-6.2-1" class="pilcrow">¶</a></p>
+<p id="section-6.2-2">
    One way that protocols can handle this situation is to use a discovery mechanism
    to declare what ephemeral key types are supported.
    The alternative would be to introduce new fully-specified algorithm identifiers
    for choices such as "ECDH-ES with the P-256 Curve", etc.
    Feedback from deployers would be useful in determining
-   what actions this specification should take in this case.<a href="#section-5.2-2" class="pilcrow">¶</a></p>
+   what actions this specification should take in this case.<a href="#section-6.2-2" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="KEMs">
-<section id="section-5.3">
+<section id="section-6.3">
         <h3 id="name-kems-and-encapsulated-keys">
-<a href="#section-5.3" class="section-number selfRef">5.3. </a><a href="#name-kems-and-encapsulated-keys" class="section-name selfRef">KEMs and Encapsulated Keys</a>
+<a href="#section-6.3" class="section-number selfRef">6.3. </a><a href="#name-kems-and-encapsulated-keys" class="section-name selfRef">KEMs and Encapsulated Keys</a>
         </h3>
-<p id="section-5.3-1">
+<p id="section-6.3-1">
     All KEM algorithms provide three functions: KeyGen(), Encapsulate(), and Decapsulate().
  In order to consider a KEM algorithm fully specified,
- there MUST be a single KDF used per KEM Algorithm.<a href="#section-5.3-1" class="pilcrow">¶</a></p>
+ there MUST be a single KDF used per KEM Algorithm.<a href="#section-6.3-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
 </div>
 <div id="Security">
-<section id="section-6">
+<section id="section-7">
       <h2 id="name-security-considerations">
-<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
       </h2>
-<p id="section-6-1">
+<p id="section-7-1">
  Using fully-specified algorithm identifiers reduces the attack surface
  relative to using polymorphic algorithm identifiers,
- since it reduces the opportunity for attackers to choose algorithms.<a href="#section-6-1" class="pilcrow">¶</a></p>
-<p id="section-6-2">
+ since it reduces the opportunity for attackers to choose algorithms.<a href="#section-7-1" class="pilcrow">¶</a></p>
+<p id="section-7-2">
  The security considerations for ECDSA in <span>[<a href="#RFC7518" class="cite xref">RFC7518</a>]</span>,
  for EdDSA in <span>[<a href="#RFC8037" class="cite xref">RFC8037</a>]</span>, and
- for ECDSA and EdDSA in <span>[<a href="#RFC9053" class="cite xref">RFC9053</a>]</span> apply.<a href="#section-6-2" class="pilcrow">¶</a></p>
+ for ECDSA and EdDSA in <span>[<a href="#RFC9053" class="cite xref">RFC9053</a>]</span> apply.<a href="#section-7-2" class="pilcrow">¶</a></p>
 </section>
 </div>
-<section id="section-7">
+<section id="section-8">
       <h2 id="name-references">
-<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-references" class="section-name selfRef">References</a>
+<a href="#section-8" class="section-number selfRef">8. </a><a href="#name-references" class="section-name selfRef">References</a>
       </h2>
-<section id="section-7.1">
+<section id="section-8.1">
         <h3 id="name-normative-references">
-<a href="#section-7.1" class="section-number selfRef">7.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+<a href="#section-8.1" class="section-number selfRef">8.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
         </h3>
 <dl class="references">
 <dt id="RFC2119">[RFC2119]</dt>
         <dd>
 <span class="refAuthor">Bradner, S.</span>, <span class="refTitle">"Key words for use in RFCs to Indicate Requirement Levels"</span>, <span class="seriesInfo">BCP 14</span>, <span class="seriesInfo">RFC 2119</span>, <span class="seriesInfo">DOI 10.17487/RFC2119</span>, <time datetime="1997-03" class="refDate">March 1997</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc2119">https://www.rfc-editor.org/info/rfc2119</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC7515">[RFC7515]</dt>
+        <dd>
+<span class="refAuthor">Jones, M.</span>, <span class="refAuthor">Bradley, J.</span>, and <span class="refAuthor">N. Sakimura</span>, <span class="refTitle">"JSON Web Signature (JWS)"</span>, <span class="seriesInfo">RFC 7515</span>, <span class="seriesInfo">DOI 10.17487/RFC7515</span>, <time datetime="2015-05" class="refDate">May 2015</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc7515">https://www.rfc-editor.org/info/rfc7515</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="RFC7516">[RFC7516]</dt>
+        <dd>
+<span class="refAuthor">Jones, M.</span> and <span class="refAuthor">J. Hildebrand</span>, <span class="refTitle">"JSON Web Encryption (JWE)"</span>, <span class="seriesInfo">RFC 7516</span>, <span class="seriesInfo">DOI 10.17487/RFC7516</span>, <time datetime="2015-05" class="refDate">May 2015</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc7516">https://www.rfc-editor.org/info/rfc7516</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="RFC8037">[RFC8037]</dt>
         <dd>
@@ -1969,9 +2006,9 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="break"></dd>
 </dl>
 </section>
-<section id="section-7.2">
+<section id="section-8.2">
         <h3 id="name-informative-references">
-<a href="#section-7.2" class="section-number selfRef">7.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
+<a href="#section-8.2" class="section-number selfRef">8.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
         </h3>
 <dl class="references">
 <dt id="FIDO2">[FIDO2]</dt>
@@ -2017,11 +2054,27 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <p id="appendix-A-1">
         [[ to be removed by the RFC Editor before publication as an RFC ]]<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 <p id="appendix-A-2">
-        -00<a href="#appendix-A-2" class="pilcrow">¶</a></p>
+        -01<a href="#appendix-A-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="appendix-A-3.1">
           <p id="appendix-A-3.1.1">
-     Created initial working group version based on draft-jones-jose-fully-specified-algorithms-02.<a href="#appendix-A-3.1.1" class="pilcrow">¶</a></p>
+     Included additional instructions for IANA.<a href="#appendix-A-3.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="appendix-A-3.2">
+          <p id="appendix-A-3.2.1">
+     Added text on KEMs and Encapsulated keys.<a href="#appendix-A-3.2.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="appendix-A-3.3">
+          <p id="appendix-A-3.3.1">
+     Added the section Fully-Spedified Computations Using Multiple Algorithms.<a href="#appendix-A-3.3.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
+<p id="appendix-A-4">
+        -00<a href="#appendix-A-4" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="appendix-A-5.1">
+          <p id="appendix-A-5.1.1">
+     Created initial working group version based on draft-jones-jose-fully-specified-algorithms-02.<a href="#appendix-A-5.1.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>

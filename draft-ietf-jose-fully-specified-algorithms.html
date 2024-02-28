@@ -1948,11 +1948,15 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-6.3" class="section-number selfRef">6.3. </a><a href="#name-kems-and-encapsulated-keys" class="section-name selfRef">KEMs and Encapsulated Keys</a>
         </h3>
 <p id="section-6.3-1">
-    All key encapsulation mechanisms (KEM) algorithms as described in <span>[<a href="#NIST.PQC-API" class="cite xref">NIST.PQC-API</a>]</span> provide three functions: KeyGen(), Encapsulate(), and Decapsulate().
- In order to consider a KEM algorithm fully specified,
- there MUST be a single KDF used per KEM Algorithm.
- For example, the HPKE KEM "0x0010 or DHKEM(P-256, HKDF-SHA256)" as defined in <span>[<a href="#RFC9180" class="cite xref">RFC9180</a>]</span> is fully specified,
- because it uses a single elliptic curve (secp256r1) and a single KDF (HKDF with SHA256) as described in <span>[<a href="#RFC5869" class="cite xref">RFC5869</a>]</span>.<a href="#section-6.3-1" class="pilcrow">¶</a></p>
+   All key encapsulation mechanisms (KEM) algorithms,
+   as described in <span>[<a href="#NIST.PQC-API" class="cite xref">NIST.PQC-API</a>]</span>,
+   provide three functions: KeyGen(), Encapsulate(), and Decapsulate().
+   In order to consider a KEM algorithm fully specified,
+   there MUST be a single KDF used per KEM Algorithm.
+   For example, the HPKE KEM "0x0010 or DHKEM(P-256, HKDF-SHA256)",
+   as defined in <span>[<a href="#RFC9180" class="cite xref">RFC9180</a>]</span>, is fully specified,
+   because it uses a single elliptic curve (secp256r1) and
+   a single KDF (HKDF with SHA256), as described in <span>[<a href="#RFC5869" class="cite xref">RFC5869</a>]</span>.<a href="#section-6.3-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
@@ -2071,11 +2075,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <ul class="normal">
 <li class="normal" id="appendix-A-3.1">
           <p id="appendix-A-3.1.1">
-     Expand references for KEMs<a href="#appendix-A-3.1.1" class="pilcrow">¶</a></p>
+     Expanded references for KEMs.<a href="#appendix-A-3.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="appendix-A-3.2">
           <p id="appendix-A-3.2.1">
-     Add example of fully specified KEM.<a href="#appendix-A-3.2.1" class="pilcrow">¶</a></p>
+     Added example of a fully-specified KEM.<a href="#appendix-A-3.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <p id="appendix-A-4">

@@ -415,14 +415,14 @@ Table of Contents
 
 6.3.  KEMs and Encapsulated Keys
 
-   All key encapsulation mechanisms (KEM) algorithms as described in
-   [NIST.PQC-API] provide three functions: KeyGen(), Encapsulate(), and
+   All key encapsulation mechanisms (KEM) algorithms, as described in
+   [NIST.PQC-API], provide three functions: KeyGen(), Encapsulate(), and
    Decapsulate().  In order to consider a KEM algorithm fully specified,
    there MUST be a single KDF used per KEM Algorithm.  For example, the
-   HPKE KEM "0x0010 or DHKEM(P-256, HKDF-SHA256)" as defined in
-   [RFC9180] is fully specified, because it uses a single elliptic curve
-   (secp256r1) and a single KDF (HKDF with SHA256) as described in
-   [RFC5869].
+   HPKE KEM "0x0010 or DHKEM(P-256, HKDF-SHA256)", as defined in
+   [RFC9180], is fully specified, because it uses a single elliptic
+   curve (secp256r1) and a single KDF (HKDF with SHA256), as described
+   in [RFC5869].
 
 7.  Security Considerations
 
@@ -529,9 +529,9 @@ Appendix A.  Document History
 
    -02
 
-   *  Expand references for KEMs
+   *  Expanded references for KEMs.
 
-   *  Add example of fully specified KEM.
+   *  Added example of a fully-specified KEM.
 
    -01
 

@@ -74,7 +74,7 @@ Table of Contents
        3.3.1.  JSON Web Signature and Encryption Algorithms
        3.3.2.  COSE Algorithms
    4.  Key Representations
-   5.  Fully-Spedified Computations Using Multiple Algorithms
+   5.  Fully-Specified Computations Using Multiple Algorithms
    6.  Notes on Algorithms Not Updated
      6.1.  Algorithms for Signing with RSASSA-PKCS1-v1_5
      6.2.  ECDH-ES and its Ephemeral Keys
@@ -358,7 +358,7 @@ Table of Contents
    except that the alg value would be Ed25519 rather than EdDSA, if
    included.
 
-5.  Fully-Spedified Computations Using Multiple Algorithms
+5.  Fully-Specified Computations Using Multiple Algorithms
 
    Both JOSE and COSE have operations that take multiple algorithms as
    parameters.  Encrypted objects in JOSE [RFC7516] use two algorithm
@@ -513,7 +513,7 @@ Appendix A.  Document History
 
    *  Added text on KEMs and Encapsulated keys.
 
-   *  Added the section Fully-Spedified Computations Using Multiple
+   *  Added the section Fully-Specified Computations Using Multiple
       Algorithms.
 
    -00

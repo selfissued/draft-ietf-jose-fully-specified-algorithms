@@ -1948,7 +1948,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="#section-6.3" class="section-number selfRef">6.3. </a><a href="#name-kems-and-encapsulated-keys" class="section-name selfRef">KEMs and Encapsulated Keys</a>
         </h3>
 <p id="section-6.3-1">
-    All key encapsulation mechanisms (KEM) algorithms provide three functions: KeyGen(), Encapsulate(), and Decapsulate().
+    All key encapsulation mechanisms (KEM) algorithms as described in <span>[<a href="#NIST.PQC-API" class="cite xref">NIST.PQC-API</a>]</span> provide three functions: KeyGen(), Encapsulate(), and Decapsulate().
  In order to consider a KEM algorithm fully specified,
  there MUST be a single KDF used per KEM Algorithm.
  For example, the HPKE KEM "0x0010 or DHKEM(P-256, HKDF-SHA256)" as defined in <span>[<a href="#RFC9180" class="cite xref">RFC9180</a>]</span> is fully specified,
@@ -2024,6 +2024,10 @@ svg :is([fill="white"], [fill^="#fff"]) {
         <dd>
 <span class="refAuthor">IANA</span>, <span class="refTitle">"JOSE Algorithms"</span>, <span>&lt;<a href="https://www.iana.org/assignments/jose/jose.xhtml#web-signature-encryption-algorithms">https://www.iana.org/assignments/jose/jose.xhtml#web-signature-encryption-algorithms</a>&gt;</span>. </dd>
 <dd class="break"></dd>
+<dt id="NIST.PQC-API">[NIST.PQC-API]</dt>
+        <dd>
+<span class="refAuthor">National Institute of Standards and Technology (NIST)</span>, <span class="refTitle">"PQC-API"</span>, <span>&lt;<a href="https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/example-files/api-notes.pdf">https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/example-files/api-notes.pdf</a>&gt;</span>. </dd>
+<dd class="break"></dd>
 <dt id="OpenID.Discovery">[OpenID.Discovery]</dt>
         <dd>
 <span class="refAuthor">Sakimura, N.</span>, <span class="refAuthor">Bradley, J.</span>, <span class="refAuthor">Jones, M.B.</span>, and <span class="refAuthor">E. Jay</span>, <span class="refTitle">"OpenID Connect Discovery 1.0"</span>, <time datetime="2014-11-08" class="refDate">8 November 2014</time>, <span>&lt;<a href="https://openid.net/specs/openid-connect-discovery-1_0.html">https://openid.net/specs/openid-connect-discovery-1_0.html</a>&gt;</span>. </dd>
@@ -2063,27 +2067,39 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <p id="appendix-A-1">
         [[ to be removed by the RFC Editor before publication as an RFC ]]<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 <p id="appendix-A-2">
-        -01<a href="#appendix-A-2" class="pilcrow">¶</a></p>
+        -02<a href="#appendix-A-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="appendix-A-3.1">
           <p id="appendix-A-3.1.1">
-     Included additional instructions for IANA.<a href="#appendix-A-3.1.1" class="pilcrow">¶</a></p>
+     Expand references for KEMs<a href="#appendix-A-3.1.1" class="pilcrow">¶</a></p>
 </li>
         <li class="normal" id="appendix-A-3.2">
           <p id="appendix-A-3.2.1">
-     Added text on KEMs and Encapsulated keys.<a href="#appendix-A-3.2.1" class="pilcrow">¶</a></p>
-</li>
-        <li class="normal" id="appendix-A-3.3">
-          <p id="appendix-A-3.3.1">
-     Added the section Fully-Specified Computations Using Multiple Algorithms.<a href="#appendix-A-3.3.1" class="pilcrow">¶</a></p>
+     Add example of fully specified KEM.<a href="#appendix-A-3.2.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 <p id="appendix-A-4">
-        -00<a href="#appendix-A-4" class="pilcrow">¶</a></p>
+        -01<a href="#appendix-A-4" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="appendix-A-5.1">
           <p id="appendix-A-5.1.1">
-     Created initial working group version based on draft-jones-jose-fully-specified-algorithms-02.<a href="#appendix-A-5.1.1" class="pilcrow">¶</a></p>
+     Included additional instructions for IANA.<a href="#appendix-A-5.1.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="appendix-A-5.2">
+          <p id="appendix-A-5.2.1">
+     Added text on KEMs and Encapsulated keys.<a href="#appendix-A-5.2.1" class="pilcrow">¶</a></p>
+</li>
+        <li class="normal" id="appendix-A-5.3">
+          <p id="appendix-A-5.3.1">
+     Added the section Fully-Specified Computations Using Multiple Algorithms.<a href="#appendix-A-5.3.1" class="pilcrow">¶</a></p>
+</li>
+      </ul>
+<p id="appendix-A-6">
+        -00<a href="#appendix-A-6" class="pilcrow">¶</a></p>
+<ul class="normal">
+<li class="normal" id="appendix-A-7.1">
+          <p id="appendix-A-7.1.1">
+     Created initial working group version based on draft-jones-jose-fully-specified-algorithms-02.<a href="#appendix-A-7.1.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
 </section>
